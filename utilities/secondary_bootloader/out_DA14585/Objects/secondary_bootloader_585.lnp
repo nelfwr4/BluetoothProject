@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\out_da14585\objects\startup_da14585_586.o"
+".\out_da14585\objects\system_da14585_586.o"
+".\out_da14585\objects\hardfault_handler.o"
+".\out_da14585\objects\nmi_handler.o"
+".\out_da14585\objects\bootloader.o"
+".\out_da14585\objects\spi_flash.o"
+".\out_da14585\objects\gpio.o"
+".\out_da14585\objects\i2c_eeprom.o"
+".\out_da14585\objects\main.o"
+".\out_da14585\objects\uart_booter.o"
+".\out_da14585\objects\crc32.o"
+".\out_da14585\objects\sw_aes.o"
+".\out_da14585\objects\decrypt.o"
+".\out_da14585\objects\dma.o"
+".\out_da14585\objects\spi_58x.o"
+".\out_da14585\objects\i2c.o"
+".\out_da14585\objects\uart.o"
+".\out_da14585\objects\systick.o"
+".\out_da14585\objects\syscntl.o"
+".\out_da14585\objects\hw_otpc_58x.o"
+".\out_da14585\objects\arch_system.o"
+".\out_da14585\objects\user_periph_setup.o"
+--library_type=microlib --strict --scatter ".\startup\bootloader_585.sct"
+--feedback=".\unused_585.txt" --any_placement=best_fit --datacompressor off --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\out_DA14585\Listings\secondary_bootloader_585.map" -o .\out_DA14585\Objects\secondary_bootloader_585.axf

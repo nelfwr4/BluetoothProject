@@ -1,0 +1,1076 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    system_da14531.o(.text) refers to system_da14531.o(.data) for .data
+    system_da14531.o(.text) refers to otp_cs.o(otp_cs_booter) for booter_val
+    startup_da14531.o(RESET) refers to startup_da14531.o(STACK) for __initial_sp
+    startup_da14531.o(RESET) refers to startup_da14531.o(.text) for Reset_Handler
+    startup_da14531.o(RESET) refers to systick.o(.text) for SysTick_Handler
+    startup_da14531.o(RESET) refers to uart.o(.text) for UART_Handler
+    startup_da14531.o(RESET) refers to i2c.o(.text) for I2C_Handler
+    startup_da14531.o(RESET) refers to adc_531.o(.text) for ADC_Handler
+    startup_da14531.o(RESET) refers to dma.o(.text) for DMA_Handler
+    startup_da14531.o(.text) refers to system_da14531.o(.text) for SystemInit
+    startup_da14531.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup_da14531.o(.text) refers to nmi_handler.o(.text) for NMI_HandlerC
+    startup_da14531.o(.text) refers to hardfault_handler.o(.text) for HardFault_HandlerC
+    bootloader.o(.text) refers to decrypt.o(.text) for Decrypt_Image
+    bootloader.o(.text) refers to crc32.o(.text) for crc32
+    bootloader.o(.text) refers to spi_flash.o(.text) for spi_flash_enable_with_autodetect
+    bootloader.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    spi_flash.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.constdata) for .constdata
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_status_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_chip_erase
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_security_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_send
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_send
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_wait_dma_write_to_finish
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_program
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_program_buffer
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_program_dma
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_fill
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_security_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_531.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_data
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_page_empty
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_sector_empty
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    i2c_eeprom.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_init
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_release
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_release
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_write_last_byte
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_send_address
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_write_last_byte
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_send_address
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_write_last_byte
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for read_data_single
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_send_address
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_write_last_byte
+    i2c_eeprom.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_send_address
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_write_last_byte
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_write_page
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    main.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    main.o(.text) refers to arch_system.o(.text) for system_init
+    main.o(.text) refers to bootloader.o(.text) for spi_loadActiveImage
+    main.o(.text) refers to spi_531.o(.text) for spi_disable
+    main.o(.text) refers to spi_flash.o(.text) for spi_flash_disable_power_pin
+    main.o(.text) refers to main.o(.data) for .data
+    uart_booter.o(.text) refers to uart_booter.o(.data) for .data
+    uart_booter.o(.text) refers to uart_booter.o(.data) for .data
+    uart_booter.o(.text) refers to systick.o(.text) for systick_register_callback
+    uart_booter.o(.text) refers to systick.o(.text) for systick_start
+    uart_booter.o(.text) refers to uart.o(.text) for uart_receive
+    uart_booter.o(.text) refers to systick.o(.text) for systick_stop
+    uart_booter.o(.text) refers to uart_booter.o(.data) for .data
+    uart_booter.o(.text) refers to uart_booter.o(.text) for systick_callback
+    uart_booter.o(.text) refers to uart.o(.text) for uart_write_byte
+    uart_booter.o(.text) refers to uart_booter.o(.text) for uart_receive_byte
+    uart_booter.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    uart_booter.o(.text) refers to uart.o(.text) for uart_write_byte
+    uart_booter.o(.text) refers to uart.o(.text) for uart_wait_tx_finish
+    uart_booter.o(.text) refers to uart_booter.o(.text) for uart_receive_byte
+    crc32.o(.text) refers to crc32.o(.constdata) for .constdata
+    sw_aes.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    sw_aes.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    sw_aes.o(.text) refers to sw_aes.o(.constdata) for .constdata
+    sw_aes.o(.text) refers to sw_aes.o(.constdata) for .constdata
+    sw_aes.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    sw_aes.o(.text) refers to sw_aes.o(.constdata) for .constdata
+    decrypt.o(.text) refers to sw_aes.o(.text) for AES_set_key
+    decrypt.o(.text) refers to decrypt.o(.constdata) for .constdata
+    decrypt.o(.text) refers to decrypt.o(.bss) for .bss
+    dma.o(.text) refers to dma.o(retention_mem_area0) for retention_mem_area0
+    dma.o(.text) refers to dma.o(.text) for dma_helper
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to dma.o(.text) for dma_register_callback
+    spi_531.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_531.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.constdata) for .constdata
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_dma_send
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_dma_send_cb
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_dma_receive
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_dma_transfer_cb
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_master_send
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    spi_531.o(.text) refers to spi_531.o(.text) for spi_master_transfer
+    spi_531.o(.text) refers to spi_531.o(retention_mem_area0) for retention_mem_area0
+    i2c.o(.text) refers to i2c.o(.text) for i2c_setup_slave
+    i2c.o(.text) refers to i2c.o(.text) for i2c_setup_master
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.text) for __NVIC_ClearPendingIRQ
+    i2c.o(.text) refers to i2c.o(.text) for i2c_unregister_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for tx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_master_transmit_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for i2c_unregister_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for rx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_master_receive_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for rx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_slave_receive_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for tx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_slave_transmit_buffer_handler
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_enable
+    uart.o(.text) refers to uart.o(.text) for uart_baudrate_setf
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_write_byte
+    uart.o(.text) refers to uart.o(.text) for uart_write_buffer
+    uart.o(.text) refers to uart.o(.text) for __NVIC_DisableIRQ
+    uart.o(.text) refers to uart.o(.text) for __NVIC_SetPriority
+    uart.o(.text) refers to uart.o(.text) for __NVIC_EnableIRQ
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_read_byte
+    uart.o(.text) refers to uart.o(.text) for uart_read_buffer
+    uart.o(.text) refers to uart.o(.text) for __NVIC_DisableIRQ
+    uart.o(.text) refers to uart.o(.text) for __NVIC_SetPriority
+    uart.o(.text) refers to uart.o(.text) for __NVIC_EnableIRQ
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_enable_flow_control
+    systick.o(.text) refers to systick.o(retention_mem_area0) for retention_mem_area0
+    systick.o(.text) refers to systick.o(retention_mem_area0) for retention_mem_area0
+    systick.o(.text) refers to systick.o(.text) for systick_start
+    systick.o(.text) refers to systick.o(.text) for systick_stop
+    syscntl.o(.text) refers (Weak) to hw_otpc_531.o(.text) for hw_otpc_is_dcdc_reserved
+    syscntl.o(.text) refers to syscntl.o(.data) for .data
+    syscntl.o(.text) refers (Weak) to hw_otpc_531.o(.text) for hw_otpc_is_dcdc_reserved
+    syscntl.o(.text) refers to syscntl.o(.text) for dcdc_cfg
+    hw_otpc_531.o(.text) refers to syscntl.o(.text) for syscntl_dcdc_get_level
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(retention_mem_area0) for retention_mem_area0
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.constdata) for .constdata
+    hw_otpc_531.o(.text) refers to syscntl.o(.data) for syscntl_dcdc_state
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(retention_mem_area0) for retention_mem_area0
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_prog
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_read_verif
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    hw_otpc_531.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_enter_mode
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_set_se_input
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_set_diff_input
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_temp_sensor_disable
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_25_cal
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_temp_sensor_enable
+    adc_531.o(.text) refers to adc_531.o(.data) for .data
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_trim_val
+    adc_531.o(.text) refers to adc_531.o(.text) for __NVIC_DisableIRQ
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_configure
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_enable
+    adc_531.o(.text) refers to adc_531.o(.text) for __NVIC_DisableIRQ
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_input_shift_enable
+    adc_531.o(.text) refers to adc_531.o(retention_mem_area0) for retention_mem_area0
+    adc_531.o(.text) refers to adc_531.o(.text) for __NVIC_DisableIRQ
+    adc_531.o(.text) refers to adc_531.o(retention_mem_area0) for retention_mem_area0
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_start
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_init
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_get_sample
+    adc_531.o(.text) refers to adc_531.o(retention_mem_area0) for retention_mem_area0
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_correction_apply
+    adc_531.o(.text) refers to adc_531.o(.text) for adc_start
+    adc_531.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    adc_531.o(.text) refers to adc_531.o(.data) for .data
+    adc_531.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    adc_531.o(.text) refers to adc_531.o(.data) for .data
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_offsh_ge
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_offsh_offset
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_single_ge
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_single_offset
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_diff_ge
+    adc_531.o(.text) refers to otp_cs.o(.text) for otp_cs_get_adc_diff_offset
+    adc_531.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    adc_531.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    otp_cs.o(.text) refers (Weak) to main.o(.text) for sb_set_debugger_mode
+    otp_cs.o(.text) refers to hw_otpc_531.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    otp_cs.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    otp_cs.o(.text) refers (Weak) to main.o(.text) for sb_set_debugger_mode
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(otp_cs_booter) for otp_cs_booter
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(.data) for .data
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(.data) for .data
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    otp_cs.o(.text) refers to otp_cs.o(retention_mem_area0) for retention_mem_area0
+    arch_system.o(.text) refers to gpio.o(.text) for GPIO_init
+    arch_system.o(.text) refers to hw_otpc_531.o(.text) for hw_otpc_init
+    arch_system.o(.text) refers (Weak) to main.o(.text) for sb_read_otp_header
+    arch_system.o(.text) refers to otp_cs.o(.text) for otp_cs_store
+    arch_system.o(.text) refers to user_periph_setup.o(.text) for periph_init
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for retention_mem_area0
+    user_periph_setup.o(.text) refers to syscntl.o(.text) for syscntl_dcdc_turn_on_in_boost
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_da14531.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_da14531.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing hardfault_handler.o(.rev16_text), (4 bytes).
+    Removing hardfault_handler.o(.revsh_text), (4 bytes).
+    Removing nmi_handler.o(.rev16_text), (4 bytes).
+    Removing nmi_handler.o(.revsh_text), (4 bytes).
+    Removing system_da14531.o(.rev16_text), (4 bytes).
+    Removing system_da14531.o(.revsh_text), (4 bytes).
+    Removing system_da14531.o(.text), (16 bytes).
+    Removing system_da14531.o(.data), (4 bytes).
+    Removing startup_da14531.o(HEAP), (256 bytes).
+    Removing bootloader.o(.rev16_text), (4 bytes).
+    Removing bootloader.o(.revsh_text), (4 bytes).
+    Removing spi_flash.o(.rev16_text), (4 bytes).
+    Removing spi_flash.o(.revsh_text), (4 bytes).
+    Removing spi_flash.o(.text), (32 bytes).
+    Removing spi_flash.o(.text), (4 bytes).
+    Removing spi_flash.o(.text), (24 bytes).
+    Removing spi_flash.o(.text), (24 bytes).
+    Removing spi_flash.o(.text), (48 bytes).
+    Removing spi_flash.o(.text), (10 bytes).
+    Removing spi_flash.o(.text), (10 bytes).
+    Removing spi_flash.o(.text), (46 bytes).
+    Removing spi_flash.o(.text), (34 bytes).
+    Removing spi_flash.o(.text), (26 bytes).
+    Removing spi_flash.o(.text), (40 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (8 bytes).
+    Removing spi_flash.o(.text), (36 bytes).
+    Removing spi_flash.o(.text), (52 bytes).
+    Removing spi_flash.o(.text), (70 bytes).
+    Removing spi_flash.o(.text), (44 bytes).
+    Removing spi_flash.o(.text), (44 bytes).
+    Removing spi_flash.o(.text), (42 bytes).
+    Removing spi_flash.o(.text), (36 bytes).
+    Removing spi_flash.o(.text), (16 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (92 bytes).
+    Removing spi_flash.o(.text), (82 bytes).
+    Removing spi_flash.o(.text), (86 bytes).
+    Removing spi_flash.o(.text), (108 bytes).
+    Removing spi_flash.o(.text), (108 bytes).
+    Removing spi_flash.o(.text), (108 bytes).
+    Removing spi_flash.o(.text), (88 bytes).
+    Removing spi_flash.o(.text), (100 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (100 bytes).
+    Removing spi_flash.o(.text), (132 bytes).
+    Removing spi_flash.o(.text), (68 bytes).
+    Removing spi_flash.o(.text), (36 bytes).
+    Removing spi_flash.o(.text), (40 bytes).
+    Removing spi_flash.o(.text), (4 bytes).
+    Removing spi_flash.o(.text), (4 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(.text), (24 bytes).
+    Removing gpio.o(.text), (24 bytes).
+    Removing gpio.o(.text), (24 bytes).
+    Removing gpio.o(.text), (32 bytes).
+    Removing gpio.o(.text), (40 bytes).
+    Removing gpio.o(.text), (16 bytes).
+    Removing gpio.o(.text), (16 bytes).
+    Removing gpio.o(retention_mem_area0), (20 bytes).
+    Removing i2c_eeprom.o(.rev16_text), (4 bytes).
+    Removing i2c_eeprom.o(.revsh_text), (4 bytes).
+    Removing i2c_eeprom.o(.text), (28 bytes).
+    Removing i2c_eeprom.o(.text), (24 bytes).
+    Removing i2c_eeprom.o(.text), (16 bytes).
+    Removing i2c_eeprom.o(.text), (8 bytes).
+    Removing i2c_eeprom.o(.text), (20 bytes).
+    Removing i2c_eeprom.o(.text), (64 bytes).
+    Removing i2c_eeprom.o(.text), (96 bytes).
+    Removing i2c_eeprom.o(.text), (100 bytes).
+    Removing i2c_eeprom.o(.text), (140 bytes).
+    Removing i2c_eeprom.o(.text), (84 bytes).
+    Removing i2c_eeprom.o(.text), (80 bytes).
+    Removing i2c_eeprom.o(.text), (160 bytes).
+    Removing i2c_eeprom.o(.text), (84 bytes).
+    Removing i2c_eeprom.o(.text), (16 bytes).
+    Removing i2c_eeprom.o(retention_mem_area0), (24 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing uart_booter.o(.rev16_text), (4 bytes).
+    Removing uart_booter.o(.revsh_text), (4 bytes).
+    Removing uart_booter.o(.text), (12 bytes).
+    Removing uart_booter.o(.text), (12 bytes).
+    Removing uart_booter.o(.text), (2 bytes).
+    Removing uart_booter.o(.text), (88 bytes).
+    Removing uart_booter.o(.text), (264 bytes).
+    Removing uart_booter.o(.text), (400 bytes).
+    Removing uart_booter.o(.data), (2 bytes).
+    Removing sw_aes.o(.text), (320 bytes).
+    Removing sw_aes.o(.text), (472 bytes).
+    Removing dma.o(.rev16_text), (4 bytes).
+    Removing dma.o(.revsh_text), (4 bytes).
+    Removing dma.o(.text), (12 bytes).
+    Removing dma.o(.text), (52 bytes).
+    Removing spi_531.o(.rev16_text), (4 bytes).
+    Removing spi_531.o(.revsh_text), (4 bytes).
+    Removing spi_531.o(.text), (36 bytes).
+    Removing spi_531.o(.text), (36 bytes).
+    Removing spi_531.o(.text), (16 bytes).
+    Removing spi_531.o(.text), (164 bytes).
+    Removing spi_531.o(.text), (260 bytes).
+    Removing spi_531.o(.text), (20 bytes).
+    Removing spi_531.o(.text), (12 bytes).
+    Removing spi_531.o(.text), (12 bytes).
+    Removing spi_531.o(.text), (12 bytes).
+    Removing spi_531.o(.text), (28 bytes).
+    Removing spi_531.o(.text), (28 bytes).
+    Removing i2c.o(.rev16_text), (4 bytes).
+    Removing i2c.o(.revsh_text), (4 bytes).
+    Removing i2c.o(.text), (48 bytes).
+    Removing i2c.o(.text), (72 bytes).
+    Removing i2c.o(.text), (204 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (120 bytes).
+    Removing i2c.o(.text), (120 bytes).
+    Removing i2c.o(.text), (20 bytes).
+    Removing i2c.o(.text), (18 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (156 bytes).
+    Removing i2c.o(.text), (68 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (136 bytes).
+    Removing i2c.o(.text), (48 bytes).
+    Removing i2c.o(.text), (40 bytes).
+    Removing i2c.o(.text), (92 bytes).
+    Removing i2c.o(.text), (92 bytes).
+    Removing i2c.o(.text), (40 bytes).
+    Removing i2c.o(.text), (144 bytes).
+    Removing i2c.o(.text), (48 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(.text), (68 bytes).
+    Removing uart.o(.text), (52 bytes).
+    Removing uart.o(.text), (56 bytes).
+    Removing uart.o(.text), (50 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (176 bytes).
+    Removing uart.o(.text), (14 bytes).
+    Removing uart.o(.text), (30 bytes).
+    Removing uart.o(.text), (120 bytes).
+    Removing uart.o(.text), (12 bytes).
+    Removing uart.o(.text), (14 bytes).
+    Removing uart.o(.text), (28 bytes).
+    Removing uart.o(.text), (120 bytes).
+    Removing uart.o(.text), (36 bytes).
+    Removing uart.o(.text), (108 bytes).
+    Removing uart.o(.text), (24 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing systick.o(.rev16_text), (4 bytes).
+    Removing systick.o(.revsh_text), (4 bytes).
+    Removing systick.o(.text), (12 bytes).
+    Removing systick.o(.text), (64 bytes).
+    Removing systick.o(.text), (24 bytes).
+    Removing systick.o(.text), (28 bytes).
+    Removing systick.o(.text), (16 bytes).
+    Removing syscntl.o(.rev16_text), (4 bytes).
+    Removing syscntl.o(.revsh_text), (4 bytes).
+    Removing syscntl.o(.text), (22 bytes).
+    Removing syscntl.o(.text), (22 bytes).
+    Removing syscntl.o(.text), (24 bytes).
+    Removing syscntl.o(.text), (36 bytes).
+    Removing syscntl.o(.text), (40 bytes).
+    Removing syscntl.o(.text), (84 bytes).
+    Removing syscntl.o(.text), (44 bytes).
+    Removing hw_otpc_531.o(.rev16_text), (4 bytes).
+    Removing hw_otpc_531.o(.revsh_text), (4 bytes).
+    Removing hw_otpc_531.o(.text), (12 bytes).
+    Removing hw_otpc_531.o(.text), (68 bytes).
+    Removing hw_otpc_531.o(.text), (22 bytes).
+    Removing hw_otpc_531.o(.text), (52 bytes).
+    Removing hw_otpc_531.o(.text), (54 bytes).
+    Removing hw_otpc_531.o(.text), (40 bytes).
+    Removing hw_otpc_531.o(.text), (52 bytes).
+    Removing adc_531.o(.rev16_text), (4 bytes).
+    Removing adc_531.o(.revsh_text), (4 bytes).
+    Removing adc_531.o(.text), (20 bytes).
+    Removing adc_531.o(.text), (28 bytes).
+    Removing adc_531.o(.text), (20 bytes).
+    Removing adc_531.o(.text), (20 bytes).
+    Removing adc_531.o(.text), (252 bytes).
+    Removing adc_531.o(.text), (16 bytes).
+    Removing adc_531.o(.text), (60 bytes).
+    Removing adc_531.o(.text), (32 bytes).
+    Removing adc_531.o(.text), (24 bytes).
+    Removing adc_531.o(.text), (16 bytes).
+    Removing adc_531.o(.text), (40 bytes).
+    Removing adc_531.o(.text), (56 bytes).
+    Removing adc_531.o(.text), (44 bytes).
+    Removing adc_531.o(.text), (16 bytes).
+    Removing adc_531.o(.text), (16 bytes).
+    Removing adc_531.o(.text), (28 bytes).
+    Removing adc_531.o(.text), (220 bytes).
+    Removing adc_531.o(.text), (40 bytes).
+    Removing adc_531.o(.text), (80 bytes).
+    Removing adc_531.o(.text), (92 bytes).
+    Removing adc_531.o(.text), (32 bytes).
+    Removing adc_531.o(.text), (116 bytes).
+    Removing adc_531.o(.data), (2 bytes).
+    Removing otp_cs.o(.rev16_text), (4 bytes).
+    Removing otp_cs.o(.revsh_text), (4 bytes).
+    Removing otp_cs.o(.text), (108 bytes).
+    Removing otp_cs.o(.text), (84 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.text), (12 bytes).
+    Removing otp_cs.o(.data), (4 bytes).
+    Removing arch_system.o(.rev16_text), (4 bytes).
+    Removing arch_system.o(.revsh_text), (4 bytes).
+    Removing arch_system.o(.text), (2 bytes).
+    Removing user_periph_setup.o(.rev16_text), (4 bytes).
+    Removing user_periph_setup.o(.revsh_text), (4 bytes).
+
+221 unused section(s) (total 10618 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ..\..\sdk\platform\arch\boot\ARM\startup_DA14531.s 0x00000000   Number         0  startup_da14531.o ABSOLUTE
+    ..\..\sdk\platform\arch\boot\system_DA14531.c 0x00000000   Number         0  system_da14531.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\arch_system.c 0x00000000   Number         0  arch_system.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\hardfault_handler.c 0x00000000   Number         0  hardfault_handler.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\nmi_handler.c 0x00000000   Number         0  nmi_handler.o ABSOLUTE
+    ..\..\sdk\platform\core_modules\crypto\sw_aes.c 0x00000000   Number         0  sw_aes.o ABSOLUTE
+    ..\..\sdk\platform\driver\adc\adc_531.c  0x00000000   Number         0  adc_531.o ABSOLUTE
+    ..\..\sdk\platform\driver\dma\dma.c      0x00000000   Number         0  dma.o ABSOLUTE
+    ..\..\sdk\platform\driver\gpio\gpio.c    0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\..\sdk\platform\driver\hw_otpc\hw_otpc_531.c 0x00000000   Number         0  hw_otpc_531.o ABSOLUTE
+    ..\..\sdk\platform\driver\i2c\i2c.c      0x00000000   Number         0  i2c.o ABSOLUTE
+    ..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.c 0x00000000   Number         0  i2c_eeprom.o ABSOLUTE
+    ..\..\sdk\platform\driver\spi\spi_531.c  0x00000000   Number         0  spi_531.o ABSOLUTE
+    ..\..\sdk\platform\driver\spi_flash\spi_flash.c 0x00000000   Number         0  spi_flash.o ABSOLUTE
+    ..\..\sdk\platform\driver\syscntl\syscntl.c 0x00000000   Number         0  syscntl.o ABSOLUTE
+    ..\..\sdk\platform\driver\systick\systick.c 0x00000000   Number         0  systick.o ABSOLUTE
+    ..\..\sdk\platform\driver\uart\uart.c    0x00000000   Number         0  uart.o ABSOLUTE
+    ..\..\sdk\platform\utilities\otp_cs\otp_cs.c 0x00000000   Number         0  otp_cs.o ABSOLUTE
+    ..\..\third_party\crc32\crc32.c          0x00000000   Number         0  crc32.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\boot\\system_DA14531.c 0x00000000   Number         0  system_da14531.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\arch_system.c 0x00000000   Number         0  arch_system.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\hardfault_handler.c 0x00000000   Number         0  hardfault_handler.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\nmi_handler.c 0x00000000   Number         0  nmi_handler.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\adc\\adc_531.c 0x00000000   Number         0  adc_531.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\dma\\dma.c 0x00000000   Number         0  dma.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\gpio\\gpio.c 0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\hw_otpc\\hw_otpc_531.c 0x00000000   Number         0  hw_otpc_531.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\i2c\\i2c.c 0x00000000   Number         0  i2c.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\i2c_eeprom\\i2c_eeprom.c 0x00000000   Number         0  i2c_eeprom.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\spi\\spi_531.c 0x00000000   Number         0  spi_531.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\spi_flash\\spi_flash.c 0x00000000   Number         0  spi_flash.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\syscntl\\syscntl.c 0x00000000   Number         0  syscntl.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\systick\\systick.c 0x00000000   Number         0  systick.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\uart\\uart.c 0x00000000   Number         0  uart.o ABSOLUTE
+    ..\\..\\sdk\\platform\\utilities\\otp_cs\\otp_cs.c 0x00000000   Number         0  otp_cs.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    src\\bootloader.c                        0x00000000   Number         0  bootloader.o ABSOLUTE
+    src\\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    src\\uart_booter.c                       0x00000000   Number         0  uart_booter.o ABSOLUTE
+    src\\user_periph_setup.c                 0x00000000   Number         0  user_periph_setup.o ABSOLUTE
+    src\bootloader.c                         0x00000000   Number         0  bootloader.o ABSOLUTE
+    src\decrypt.c                            0x00000000   Number         0  decrypt.o ABSOLUTE
+    src\main.c                               0x00000000   Number         0  main.o ABSOLUTE
+    src\uart_booter.c                        0x00000000   Number         0  uart_booter.o ABSOLUTE
+    src\user_periph_setup.c                  0x00000000   Number         0  user_periph_setup.o ABSOLUTE
+    RESET                                    0x07fc0000   Section      160  startup_da14531.o(RESET)
+    .ARM.Collect$$$$00000000                 0x07fc00a0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x07fc00a0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x07fc00a4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x07fc00a8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x07fc00a8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x07fc00a8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000E                 0x07fc00b0   Section        4  entry12b.o(.ARM.Collect$$$$0000000E)
+    .ARM.Collect$$$$0000000F                 0x07fc00b4   Section        0  entry10a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00000011                 0x07fc00b4   Section        0  entry11a.o(.ARM.Collect$$$$00000011)
+    .ARM.Collect$$$$00002712                 0x07fc00b4   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x07fc00b4   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x07fc00b8   Section        0  system_da14531.o(.text)
+    __NVIC_DisableIRQ                        0x07fc011d   Thumb Code    26  system_da14531.o(.text)
+    .text                                    0x07fc014c   Section       80  startup_da14531.o(.text)
+    NMI_Handler                              0x07fc0155   Thumb Code    24  startup_da14531.o(.text)
+    HardFault_Handler                        0x07fc016d   Thumb Code    24  startup_da14531.o(.text)
+    .text                                    0x07fc019c   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x07fc01c0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x07fc01ce   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x07fc01d0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .text                                    0x07fc8000   Section        0  hardfault_handler.o(.text)
+    .text                                    0x07fc8004   Section        0  nmi_handler.o(.text)
+    .text                                    0x07fc8034   Section        0  bootloader.o(.text)
+    loadActiveImage                          0x07fc8035   Thumb Code   382  bootloader.o(.text)
+    FlashRead                                0x07fc81eb   Thumb Code    12  bootloader.o(.text)
+    spi_flash_peripheral_init                0x07fc81f7   Thumb Code   134  bootloader.o(.text)
+    .text                                    0x07fc8284   Section        0  spi_flash.o(.text)
+    .text                                    0x07fc8440   Section        0  gpio.o(.text)
+    .text                                    0x07fc84a8   Section        0  main.o(.text)
+    reset_spi_gpios                          0x07fc84b1   Thumb Code    66  main.o(.text)
+    .text                                    0x07fc85cc   Section        0  crc32.o(.text)
+    .text                                    0x07fc85f0   Section        0  decrypt.o(.text)
+    .text                                    0x07fc8624   Section        0  dma.o(.text)
+    dma_helper                               0x07fc8637   Thumb Code    62  dma.o(.text)
+    __NVIC_EnableIRQ                         0x07fc8811   Thumb Code    20  dma.o(.text)
+    .text                                    0x07fc8838   Section        0  spi_531.o(.text)
+    spi_dma_receive_cb                       0x07fc8839   Thumb Code    28  spi_531.o(.text)
+    spi_dma_send                             0x07fc8855   Thumb Code    82  spi_531.o(.text)
+    spi_dma_receive                          0x07fc88a7   Thumb Code    80  spi_531.o(.text)
+    spi_master_receive                       0x07fc8903   Thumb Code   220  spi_531.o(.text)
+    spi_dma_init                             0x07fc8bfb   Thumb Code   126  spi_531.o(.text)
+    .text                                    0x07fc8c80   Section        0  i2c.o(.text)
+    __NVIC_ClearPendingIRQ                   0x07fc8c9b   Thumb Code    18  i2c.o(.text)
+    .text                                    0x07fc8cb8   Section        0  uart.o(.text)
+    uart_rx_isr                              0x07fc8cb9   Thumb Code    72  uart.o(.text)
+    uart_intr_hndl                           0x07fc8d01   Thumb Code   156  uart.o(.text)
+    uart_tx_isr                              0x07fc8da5   Thumb Code   100  uart.o(.text)
+    .text                                    0x07fc8e14   Section        0  systick.o(.text)
+    .text                                    0x07fc8e24   Section        0  syscntl.o(.text)
+    dcdc_cfg                                 0x07fc8e25   Thumb Code    58  syscntl.o(.text)
+    .text                                    0x07fc8ef8   Section        0  adc_531.o(.text)
+    .text                                    0x07fc8f14   Section        0  otp_cs.o(.text)
+    calc_adc_ge                              0x07fc90fb   Thumb Code    16  otp_cs.o(.text)
+    calc_adc_offset                          0x07fc910b   Thumb Code    12  otp_cs.o(.text)
+    .text                                    0x07fc9138   Section        0  arch_system.o(.text)
+    .text                                    0x07fc9318   Section        0  user_periph_setup.o(.text)
+    .text                                    0x07fc9334   Section        0  uidiv.o(.text)
+    .text                                    0x07fc9360   Section        0  idiv.o(.text)
+    .text                                    0x07fc9388   Section        0  memcpya.o(.text)
+    i.__ARM_common_switch8                   0x07fc93ac   Section        0  hw_otpc_531.o(i.__ARM_common_switch8)
+    .constdata                               0x07fc93c8   Section      132  spi_flash.o(.constdata)
+    .constdata                               0x07fc944c   Section     1024  crc32.o(.constdata)
+    crc32_tab                                0x07fc944c   Data        1024  crc32.o(.constdata)
+    .constdata                               0x07fc984c   Section      542  sw_aes.o(.constdata)
+    aes_sbox                                 0x07fc984c   Data         256  sw_aes.o(.constdata)
+    aes_isbox                                0x07fc994c   Data         256  sw_aes.o(.constdata)
+    Rcon                                     0x07fc9a4c   Data          30  sw_aes.o(.constdata)
+    .constdata                               0x07fc9a6a   Section       32  decrypt.o(.constdata)
+    .constdata                               0x07fc9a8c   Section       28  spi_531.o(.constdata)
+    .constdata                               0x07fc9aa8   Section       28  hw_otpc_531.o(.constdata)
+    tim1                                     0x07fc9aa8   Data          28  hw_otpc_531.o(.constdata)
+    .bss                                     0x07fc9ac4   Section       12  spi_flash.o(.bss)
+    spi_flash_cfg_env                        0x07fc9ac4   Data          12  spi_flash.o(.bss)
+    .bss                                     0x07fc9ad0   Section      500  decrypt.o(.bss)
+    .bss                                     0x07fc9cc4   Section       48  i2c.o(.bss)
+    i2c_env                                  0x07fc9cc4   Data          48  i2c.o(.bss)
+    STACK                                    0x07fc9cf8   Section     1536  startup_da14531.o(STACK)
+    retention_mem_area0                      0x07fca2f8   Section       32  dma.o(retention_mem_area0)
+    dma_callbacks                            0x07fca2f8   Data          32  dma.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca318   Section       28  spi_531.o(retention_mem_area0)
+    spi_env                                  0x07fca318   Data          28  spi_531.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca334   Section       64  uart.o(retention_mem_area0)
+    uartn_env                                0x07fca334   Data          64  uart.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca374   Section        4  systick.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca378   Section        1  hw_otpc_531.o(retention_mem_area0)
+    dcdc_reserved                            0x07fca378   Data           1  hw_otpc_531.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca37c   Section        4  adc_531.o(retention_mem_area0)
+    intr_cb                                  0x07fca37c   Data           4  adc_531.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca380   Section       92  otp_cs.o(retention_mem_area0)
+    otp_cs                                   0x07fca380   Data          92  otp_cs.o(retention_mem_area0)
+    retention_mem_area0                      0x07fca3dc   Section        2  arch_system.o(retention_mem_area0)
+    .text                                    0x07fcba00   Section        0  sw_aes.o(.text)
+    .text                                    0x07fcbe48   Section        0  hw_otpc_531.o(.text)
+    dcdc_cfg                                 0x07fcbe49   Thumb Code    46  hw_otpc_531.o(.text)
+    .data                                    0x07fcbfc4   Section        1  main.o(.data)
+    .data                                    0x07fcbfc5   Section        2  syscntl.o(.data)
+    otp_cs_booter                            0x07fcbfc8   Section        8  otp_cs.o(otp_cs_booter)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __arm_fini_                               - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    reset_indication                          - Undefined Weak Reference
+    rf_pa_pwr_get                             - Undefined Weak Reference
+    __Vectors_Size                           0x000000a0   Number         0  startup_da14531.o ABSOLUTE
+    __Vectors                                0x07fc0000   Data           4  startup_da14531.o(RESET)
+    __Vectors_End                            0x07fc00a0   Data           0  startup_da14531.o(RESET)
+    __main                                   0x07fc00a1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x07fc00a1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x07fc00a5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x07fc00a9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x07fc00a9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x07fc00a9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x07fc00a9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_lib_shutdown_fini                   0x07fc00b1   Thumb Code     0  entry12b.o(.ARM.Collect$$$$0000000E)
+    __rt_final_cpp                           0x07fc00b5   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000F)
+    __rt_final_exit                          0x07fc00b5   Thumb Code     0  entry11a.o(.ARM.Collect$$$$00000011)
+    SystemInit                               0x07fc00b9   Thumb Code   100  system_da14531.o(.text)
+    Reset_Handler                            0x07fc014d   Thumb Code     8  startup_da14531.o(.text)
+    SVC_Handler                              0x07fc0185   Thumb Code     2  startup_da14531.o(.text)
+    PendSV_Handler                           0x07fc0187   Thumb Code     2  startup_da14531.o(.text)
+    BLE_RF_DIAG_Handler                      0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    BLE_WAKEUP_LP_Handler                    0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    GPIO0_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    GPIO1_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    GPIO2_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    GPIO3_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    GPIO4_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    KEYBRD_Handler                           0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    RESERVED21_Handler                       0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    RESERVED22_Handler                       0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    RESERVED23_Handler                       0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    RFCAL_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    RTC_Handler                              0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    SPI_Handler                              0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    SWTIM1_Handler                           0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    SWTIM_Handler                            0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    WKUP_QUADEC_Handler                      0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    XTAL32M_RDY_Handler                      0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    rwble_isr                                0x07fc018b   Thumb Code     0  startup_da14531.o(.text)
+    __scatterload                            0x07fc019d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x07fc019d   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x07fc01c1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x07fc01cf   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x07fc01d1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x07fc01e0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x07fc0220   Number         0  anon$$obj.o(Region$$Table)
+    HardFault_HandlerC                       0x07fc8001   Thumb Code     2  hardfault_handler.o(.text)
+    NMI_HandlerC                             0x07fc8005   Thumb Code    42  nmi_handler.o(.text)
+    spi_loadActiveImage                      0x07fc81b3   Thumb Code    56  bootloader.o(.text)
+    spi_flash_read_status_reg                0x07fc8285   Thumb Code    20  spi_flash.o(.text)
+    spi_flash_is_busy                        0x07fc8299   Thumb Code    16  spi_flash.o(.text)
+    spi_flash_configure_env                  0x07fc82a9   Thumb Code     8  spi_flash.o(.text)
+    spi_flash_release_from_power_down        0x07fc82b1   Thumb Code    26  spi_flash.o(.text)
+    spi_flash_enable                         0x07fc82cb   Thumb Code    34  spi_flash.o(.text)
+    spi_flash_read_jedec_id                  0x07fc82ed   Thumb Code    76  spi_flash.o(.text)
+    spi_flash_auto_detect                    0x07fc8339   Thumb Code    94  spi_flash.o(.text)
+    spi_flash_enable_with_autodetect         0x07fc8397   Thumb Code    24  spi_flash.o(.text)
+    spi_flash_read_data_dma                  0x07fc83af   Thumb Code   130  spi_flash.o(.text)
+    spi_flash_disable_power_pin              0x07fc8431   Thumb Code     2  spi_flash.o(.text)
+    GPIO_init                                0x07fc8441   Thumb Code     2  gpio.o(.text)
+    GPIO_SetPinFunction                      0x07fc8443   Thumb Code    18  gpio.o(.text)
+    GPIO_SetInactive                         0x07fc8455   Thumb Code    14  gpio.o(.text)
+    GPIO_SetActive                           0x07fc8463   Thumb Code    14  gpio.o(.text)
+    GPIO_ConfigurePin                        0x07fc8471   Thumb Code    38  gpio.o(.text)
+    GPIO_DisablePorPin                       0x07fc8497   Thumb Code     8  gpio.o(.text)
+    sb_read_otp_header                       0x07fc84a9   Thumb Code     2  main.o(.text)
+    sb_set_debugger_mode                     0x07fc84ab   Thumb Code     6  main.o(.text)
+    main                                     0x07fc84f3   Thumb Code   196  main.o(.text)
+    crc32                                    0x07fc85cd   Thumb Code    32  crc32.o(.text)
+    Decrypt_Image                            0x07fc85f1   Thumb Code    38  decrypt.o(.text)
+    dma_channel_stop                         0x07fc8625   Thumb Code    18  dma.o(.text)
+    DMA_Handler                              0x07fc8675   Thumb Code    86  dma.o(.text)
+    dma_initialize                           0x07fc86cb   Thumb Code   288  dma.o(.text)
+    dma_register_callback                    0x07fc87eb   Thumb Code    16  dma.o(.text)
+    dma_channel_start                        0x07fc87fb   Thumb Code    22  dma.o(.text)
+    spi_wait_dma_read_to_finish              0x07fc88f7   Thumb Code    12  spi_531.o(.text)
+    spi_set_speed                            0x07fc89df   Thumb Code    40  spi_531.o(.text)
+    spi_enable                               0x07fc8a07   Thumb Code    36  spi_531.o(.text)
+    spi_disable                              0x07fc8a2b   Thumb Code    36  spi_531.o(.text)
+    spi_set_cp_mode                          0x07fc8a4f   Thumb Code    14  spi_531.o(.text)
+    spi_set_bitmode                          0x07fc8a5d   Thumb Code    72  spi_531.o(.text)
+    spi_initialize                           0x07fc8aa5   Thumb Code   152  spi_531.o(.text)
+    spi_cs_low                               0x07fc8b3d   Thumb Code    24  spi_531.o(.text)
+    spi_cs_high                              0x07fc8b55   Thumb Code    22  spi_531.o(.text)
+    spi_receive                              0x07fc8b6b   Thumb Code    16  spi_531.o(.text)
+    spi_access                               0x07fc8b7b   Thumb Code   104  spi_531.o(.text)
+    spi_transaction                          0x07fc8be3   Thumb Code    24  spi_531.o(.text)
+    I2C_Handler                              0x07fc8c81   Thumb Code    26  i2c.o(.text)
+    UART_Handler                             0x07fc8d9d   Thumb Code     4  uart.o(.text)
+    UART2_Handler                            0x07fc8da1   Thumb Code     4  uart.o(.text)
+    SysTick_Handler                          0x07fc8e15   Thumb Code    12  systick.o(.text)
+    syscntl_dcdc_get_level                   0x07fc8e5f   Thumb Code    20  syscntl.o(.text)
+    syscntl_dcdc_set_level                   0x07fc8e73   Thumb Code    36  syscntl.o(.text)
+    syscntl_dcdc_turn_on_in_boost            0x07fc8e97   Thumb Code    86  syscntl.o(.text)
+    ADC_Handler                              0x07fc8ef9   Thumb Code    18  adc_531.o(.text)
+    otp_cs_store                             0x07fc8f15   Thumb Code   480  otp_cs.o(.text)
+    otp_cs_get_xtal32m_trim_value            0x07fc90f5   Thumb Code     6  otp_cs.o(.text)
+    set_xtal32m_trim_value                   0x07fc9139   Thumb Code    82  arch_system.o(.text)
+    system_init                              0x07fc918b   Thumb Code   374  arch_system.o(.text)
+    periph_init                              0x07fc9319   Thumb Code    24  user_periph_setup.o(.text)
+    __aeabi_uidiv                            0x07fc9335   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x07fc9335   Thumb Code    44  uidiv.o(.text)
+    __aeabi_idiv                             0x07fc9361   Thumb Code     0  idiv.o(.text)
+    __aeabi_idivmod                          0x07fc9361   Thumb Code    40  idiv.o(.text)
+    __aeabi_memcpy                           0x07fc9389   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x07fc9389   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x07fc9389   Thumb Code     0  memcpya.o(.text)
+    __ARM_common_switch8                     0x07fc93ad   Thumb Code    26  hw_otpc_531.o(i.__ARM_common_switch8)
+    Key                                      0x07fc9a6a   Data          16  decrypt.o(.constdata)
+    IV                                       0x07fc9a7a   Data          16  decrypt.o(.constdata)
+    ctx                                      0x07fc9ad0   Data         500  decrypt.o(.bss)
+    __initial_sp                             0x07fca2f8   Data           0  startup_da14531.o(STACK)
+    callback_function                        0x07fca374   Data           4  systick.o(retention_mem_area0)
+    clk_freq_trim_reg_value                  0x07fca3dc   Data           2  arch_system.o(retention_mem_area0)
+    AES_set_key                              0x07fcba01   Thumb Code   276  sw_aes.o(.text)
+    AES_convert_key                          0x07fcbb15   Thumb Code   124  sw_aes.o(.text)
+    AES_decrypt                              0x07fcbb91   Thumb Code   492  sw_aes.o(.text)
+    AES_cbc_decrypt                          0x07fcbd7d   Thumb Code   180  sw_aes.o(.text)
+    hw_otpc_enter_mode                       0x07fcbe77   Thumb Code    76  hw_otpc_531.o(.text)
+    hw_otpc_is_dcdc_reserved                 0x07fcbec3   Thumb Code     6  hw_otpc_531.o(.text)
+    hw_otpc_set_speed                        0x07fcbec9   Thumb Code    16  hw_otpc_531.o(.text)
+    hw_otpc_init                             0x07fcbed9   Thumb Code    96  hw_otpc_531.o(.text)
+    hw_otpc_disable                          0x07fcbf39   Thumb Code   110  hw_otpc_531.o(.text)
+    sb_conf                                  0x07fcbfc4   Data           1  main.o(.data)
+    syscntl_dcdc_state                       0x07fcbfc5   Data           2  syscntl.o(.data)
+    booter_val                               0x07fcbfc8   Data           8  otp_cs.o(otp_cs_booter)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x07fc00a1
+
+  Load Region LR_1 (Base: 0x07fc0000, Size: 0x000022b4, Max: 0x00008000, ABSOLUTE)
+
+    Execution Region ER_1 (Exec base: 0x07fc0000, Load base: 0x07fc0000, Size: 0x00000220, Max: 0x00000500, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fc0000   0x07fc0000   0x000000a0   Data   RO          168    RESET               startup_da14531.o
+    0x07fc00a0   0x07fc00a0   0x00000000   Code   RO         1752  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x07fc00a0   0x07fc00a0   0x00000004   Code   RO         1761    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x07fc00a4   0x07fc00a4   0x00000004   Code   RO         1764    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x07fc00a8   0x07fc00a8   0x00000000   Code   RO         1766    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x07fc00a8   0x07fc00a8   0x00000000   Code   RO         1768    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x07fc00a8   0x07fc00a8   0x00000008   Code   RO         1769    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x07fc00b0   0x07fc00b0   0x00000004   Code   RO         1776    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
+    0x07fc00b4   0x07fc00b4   0x00000000   Code   RO         1771    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
+    0x07fc00b4   0x07fc00b4   0x00000000   Code   RO         1773    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
+    0x07fc00b4   0x07fc00b4   0x00000004   Code   RO         1762    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x07fc00b8   0x07fc00b8   0x00000094   Code   RO          130    .text               system_da14531.o
+    0x07fc014c   0x07fc014c   0x00000050   Code   RO          169    .text               startup_da14531.o
+    0x07fc019c   0x07fc019c   0x00000024   Code   RO         1777    .text               mc_p.l(init.o)
+    0x07fc01c0   0x07fc01c0   0x0000000e   Code   RO         1781    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x07fc01ce   0x07fc01ce   0x00000002   Code   RO         1782    i.__scatterload_null  mc_p.l(handlers.o)
+    0x07fc01d0   0x07fc01d0   0x0000000e   Code   RO         1783    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x07fc01de   0x07fc01de   0x00000002   PAD
+    0x07fc01e0   0x07fc01e0   0x00000040   Data   RO         1779    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_2 (Exec base: 0x07fc8000, Load base: 0x07fc0220, Size: 0x000023e0, Max: 0x00003000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fc8000   0x07fc0220   0x00000002   Code   RO            3    .text               hardfault_handler.o
+    0x07fc8002   0x07fc0222   0x00000002   PAD
+    0x07fc8004   0x07fc0224   0x00000030   Code   RO          103    .text               nmi_handler.o
+    0x07fc8034   0x07fc0254   0x00000250   Code   RO          175    .text               bootloader.o
+    0x07fc8284   0x07fc04a4   0x000001bc   Code   RO          214    .text               spi_flash.o
+    0x07fc8440   0x07fc0660   0x00000068   Code   RO          462    .text               gpio.o
+    0x07fc84a8   0x07fc06c8   0x00000124   Code   RO          646    .text               main.o
+    0x07fc85cc   0x07fc07ec   0x00000024   Code   RO          756    .text               crc32.o
+    0x07fc85f0   0x07fc0810   0x00000034   Code   RO          802    .text               decrypt.o
+    0x07fc8624   0x07fc0844   0x00000214   Code   RO          820    .text               dma.o
+    0x07fc8838   0x07fc0a58   0x00000448   Code   RO          862    .text               spi_531.o
+    0x07fc8c80   0x07fc0ea0   0x00000038   Code   RO          977    .text               i2c.o
+    0x07fc8cb8   0x07fc0ed8   0x0000015c   Code   RO         1099    .text               uart.o
+    0x07fc8e14   0x07fc1034   0x00000010   Code   RO         1235    .text               systick.o
+    0x07fc8e24   0x07fc1044   0x000000d4   Code   RO         1295    .text               syscntl.o
+    0x07fc8ef8   0x07fc1118   0x0000001c   Code   RO         1443    .text               adc_531.o
+    0x07fc8f14   0x07fc1134   0x00000224   Code   RO         1580    .text               otp_cs.o
+    0x07fc9138   0x07fc1358   0x000001e0   Code   RO         1685    .text               arch_system.o
+    0x07fc9318   0x07fc1538   0x0000001c   Code   RO         1728    .text               user_periph_setup.o
+    0x07fc9334   0x07fc1554   0x0000002c   Code   RO         1753    .text               mc_p.l(uidiv.o)
+    0x07fc9360   0x07fc1580   0x00000028   Code   RO         1755    .text               mc_p.l(idiv.o)
+    0x07fc9388   0x07fc15a8   0x00000024   Code   RO         1757    .text               mc_p.l(memcpya.o)
+    0x07fc93ac   0x07fc15cc   0x0000001a   Code   RO         1415    i.__ARM_common_switch8  hw_otpc_531.o
+    0x07fc93c6   0x07fc15e6   0x00000002   PAD
+    0x07fc93c8   0x07fc15e8   0x00000084   Data   RO          254    .constdata          spi_flash.o
+    0x07fc944c   0x07fc166c   0x00000400   Data   RO          757    .constdata          crc32.o
+    0x07fc984c   0x07fc1a6c   0x0000021e   Data   RO          773    .constdata          sw_aes.o
+    0x07fc9a6a   0x07fc1c8a   0x00000020   Data   RO          804    .constdata          decrypt.o
+    0x07fc9a8a   0x07fc1caa   0x00000002   PAD
+    0x07fc9a8c   0x07fc1cac   0x0000001c   Data   RO          873    .constdata          spi_531.o
+    0x07fc9aa8   0x07fc1cc8   0x0000001c   Data   RO         1364    .constdata          hw_otpc_531.o
+    0x07fc9ac4        -       0x0000000c   Zero   RW          253    .bss                spi_flash.o
+    0x07fc9ad0        -       0x000001f4   Zero   RW          803    .bss                decrypt.o
+    0x07fc9cc4        -       0x00000030   Zero   RW          978    .bss                i2c.o
+    0x07fc9cf4   0x07fc1ce4   0x00000004   PAD
+    0x07fc9cf8        -       0x00000600   Zero   RW          166    STACK               startup_da14531.o
+    0x07fca2f8        -       0x00000020   Zero   RW          823    retention_mem_area0  dma.o
+    0x07fca318        -       0x0000001c   Zero   RW          874    retention_mem_area0  spi_531.o
+    0x07fca334        -       0x00000040   Zero   RW         1118    retention_mem_area0  uart.o
+    0x07fca374        -       0x00000004   Zero   RW         1240    retention_mem_area0  systick.o
+    0x07fca378        -       0x00000001   Zero   RW         1365    retention_mem_area0  hw_otpc_531.o
+    0x07fca379   0x07fc1ce4   0x00000003   PAD
+    0x07fca37c        -       0x00000004   Zero   RW         1450    retention_mem_area0  adc_531.o
+    0x07fca380        -       0x0000005c   Zero   RW         1595    retention_mem_area0  otp_cs.o
+    0x07fca3dc        -       0x00000002   Zero   RW         1686    retention_mem_area0  arch_system.o
+
+
+    Execution Region ER_3 (Exec base: 0x07fcba00, Load base: 0x07fc1ce4, Size: 0x000005d0, Max: 0x00000600, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fcba00   0x07fc1ce4   0x00000448   Code   RO          770    .text               sw_aes.o
+    0x07fcbe48   0x07fc212c   0x0000017c   Code   RO         1356    .text               hw_otpc_531.o
+    0x07fcbfc4   0x07fc22a8   0x00000001   Data   RW          647    .data               main.o
+    0x07fcbfc5   0x07fc22a9   0x00000002   Data   RW         1298    .data               syscntl.o
+    0x07fcbfc7   0x07fc22ab   0x00000001   PAD
+    0x07fcbfc8   0x07fc22ac   0x00000008   Data   RW         1594    otp_cs_booter       otp_cs.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        28         10          0          0          4       2782   adc_531.o
+       480         24          0          0          2       5511   arch_system.o
+       592          8          0          0          0      12666   bootloader.o
+        36          4       1024          0          0       1216   crc32.o
+        52         14         32          0        500       1113   decrypt.o
+       532         20          0          0         32      16076   dma.o
+       104         10          0          0          0       2567   gpio.o
+         2          0          0          0          0     191161   hardfault_handler.o
+       406         38         28          0          1       4594   hw_otpc_531.o
+        56         12          0          0         48      16088   i2c.o
+         0          0          0          0          0       2824   i2c_eeprom.o
+       292         22          0          1          0       5021   main.o
+        48          6          0          0          0       8527   nmi_handler.o
+       548         52          0          8         92       2874   otp_cs.o
+      1096         28         28          0         28      20410   spi_531.o
+       444         14        132          0         12       4905   spi_flash.o
+        80         16        160          0       1536        684   startup_da14531.o
+      1096         24        542          0          0       6332   sw_aes.o
+       212         12          0          2          0       2189   syscntl.o
+       148         22          0          0          0      10625   system_da14531.o
+        16          4          0          0          4        738   systick.o
+       348         12          0          0         64      11457   uart.o
+         0          0          0          0          0        416   uart_booter.o
+        28          4          0          0          0       2362   user_periph_setup.o
+
+    ----------------------------------------------------------------------
+      6648        356       2012         12       2332     333138   Object Totals
+         0          0         64          0          0          0   (incl. Generated)
+         4          0          2          1          9          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         4          0          0          0          0          0   entry12b.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        40          0          0          0          0         72   idiv.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0         60   memcpya.o
+        44          0          0          0          0         72   uidiv.o
+
+    ----------------------------------------------------------------------
+       212         16          0          0          0        272   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       210         16          0          0          0        272   mc_p.l
+
+    ----------------------------------------------------------------------
+       212         16          0          0          0        272   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6860        372       2012         12       2332     331934   Grand Totals
+      6860        372       2012         12       2332     331934   ELF Image Totals
+      6860        372       2012         12          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 8872 (   8.66kB)
+    Total RW  Size (RW Data + ZI Data)              2344 (   2.29kB)
+    Total ROM Size (Code + RO Data + RW Data)       8884 (   8.68kB)
+
+==============================================================================
+

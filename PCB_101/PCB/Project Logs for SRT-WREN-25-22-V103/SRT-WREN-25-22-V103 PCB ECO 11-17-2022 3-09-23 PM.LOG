@@ -1,0 +1,10 @@
+Added Component: Designator=CON1(8Pin 1.25mm SMT)
+Added Pin To Net: NetName=M1 Pin=CON1-1
+Added Pin To Net: NetName=M2 Pin=CON1-2
+Added Pin To Net: NetName=+VBAT Pin=CON1-3
+Added Pin To Net: NetName=GND Pin=CON1-4
+Added Pin To Net: NetName=FB2 Pin=CON1-5
+Added Pin To Net: NetName=GND Pin=CON1-6
+Added Pin To Net: NetName=FB1 Pin=CON1-7
+Added Pin To Net: NetName=GND Pin=CON1-8
+Added Member To Class: ClassName=Sheet1 Member=Component CON1 8pin 1.25
