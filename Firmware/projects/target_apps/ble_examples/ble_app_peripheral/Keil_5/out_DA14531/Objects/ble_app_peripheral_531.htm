@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\out_DA14531\Objects\ble_app_peripheral_531.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\out_DA14531\Objects\ble_app_peripheral_531.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Nov 10 16:07:23 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Nov 21 15:13:25 2022
 <BR><P>
 <H3>Maximum Stack Usage =        416 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1153,7 +1153,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_da14531.o(.text)
 </UL>
 <P><STRONG><a name="[1e]"></a>main</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, arch_main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; system_init &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; system_init &rArr; user_app_init &rArr; lock &rArr; gpadc_read &rArr; adc_offset_calibrate &rArr; adc_init &rArr; adc_configure
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_sleep
@@ -1345,7 +1345,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d3]"></a>system_init</STRONG> (Thumb, 598 bytes, Stack size 24 bytes, arch_system.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = system_init &rArr; periph_init &rArr; set_pad_functions &rArr; GPIO_ConfigurePin &rArr; GPIO_SetPinFunction
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = system_init &rArr; user_app_init &rArr; lock &rArr; gpadc_read &rArr; adc_offset_calibrate &rArr; adc_init &rArr; adc_configure
 </UL>
 <BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_rcx_freq
@@ -2921,6 +2921,8 @@ Global Symbols
 <LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpadc_read
 <LI><a href="#[1e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpadc_sample_to_mv
 </UL>
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_init
+</UL>
 <BR>[Address Reference Count : 1]<UL><LI> user_custs1_impl.o(.text)
 </UL>
 <P><STRONG><a name="[31]"></a>stay</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, user_custs1_impl.o(.text))
@@ -2940,7 +2942,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> user_custs1_impl.o(.text)
 </UL>
-<P><STRONG><a name="[1e4]"></a>user_svc1_led_wr_ind_handler</STRONG> (Thumb, 4072 bytes, Stack size 120 bytes, user_custs1_impl.o(.text))
+<P><STRONG><a name="[1e4]"></a>user_svc1_led_wr_ind_handler</STRONG> (Thumb, 4066 bytes, Stack size 120 bytes, user_custs1_impl.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
@@ -2982,11 +2984,12 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
 </UL>
-<P><STRONG><a name="[104]"></a>user_app_init</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, user_peripheral.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = user_app_init &rArr; handle_button_enable &rArr; wkupct_enable_irq
+<P><STRONG><a name="[104]"></a>user_app_init</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, user_peripheral.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = user_app_init &rArr; lock &rArr; gpadc_read &rArr; adc_offset_calibrate &rArr; adc_init &rArr; adc_configure
 </UL>
 <BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_app_on_init
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lock
 <LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handle_button_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init

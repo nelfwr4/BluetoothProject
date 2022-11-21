@@ -66,8 +66,8 @@ uint8_t max_Rec[2] =
 };
 uint8_t key[ENC_DATA_LEN];        // AES key
 uint8_t aes_result[ENC_DATA_LEN]; // Store AES Decrypt result
-uint16_t motorRunTime;            // Motor Working time
-uint16_t lockBackTime;            // Motor pause time
+uint16_t motorRunTime = 0x03E8;            // Motor Working time
+uint16_t lockBackTime = 0x0032;            // Motor pause time
 uint8_t keyString[8];             // 16 Digit Hex number
 uint8_t keyID[4];                 // 8 Digit Hex number
 uint8_t blockdKeyID1[4];          // storing block Key Id1
@@ -887,7 +887,7 @@ void user_svc1_led_wr_ind_handler(ke_msg_id_t const msgid,
   }
 
   /* -------------------------------------------------------------------------- */
-  /*                           4.0 Blocked key Id settings                      */
+  /*                           4.0 Blocked key Id set                           */
   /* -------------------------------------------------------------------------- */
   if (identifier[3] == val_2[3])
   {
@@ -931,7 +931,7 @@ void user_svc1_led_wr_ind_handler(ke_msg_id_t const msgid,
           uint32_t bytes_written4;
           spi_flash_write_data(&blockdKeyID2[0], 0x1F01E, sizeof(blockdKeyID2), &bytes_written4);
           GPIO_Enable_HW_Reset();
-
+          
           /// Response
 
           X[0] = val_1[0];         // start
@@ -1406,8 +1406,8 @@ void user_svc1_led_wr_ind_handler(ke_msg_id_t const msgid,
                           {
                             if (val_1[13] == 0xd7)
                             {
-                              if (val_1[14] == 0xd8)
-                                if (val_1[15] == 0xd9)
+                              if (val_1[13] == 0xd8)
+                                if (val_1[13] == 0xd9)
                                 {
                                   /// writing the default key string,BKID1,BKID2,Lock back time, motor run time and AES key to spi flash
                                   uint32_t bytes_written;

@@ -133,6 +133,8 @@ static void param_update_request_timer_cb()
 ///
 void user_app_init(void)
 {
+	extern void lock();
+	lock();
 	handle_button_enable();
     app_param_update_request_timer_used = EASY_TIMER_INVALID_TIMER;
 
