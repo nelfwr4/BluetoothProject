@@ -58,7 +58,7 @@ ke_msg_id_t handle_timer __SECTION_ZERO("retention_mem_area0");    //@RETENTION 
 /* -------------------------------------------------------------------------- */
 /*                Global variable Declarations and Definitions                */
 /* -------------------------------------------------------------------------- */
-uint8_t firmwareVersion = 0x01;
+uint8_t firmwareVersion = 0x02;
 uint8_t max_Rec[2] =
     {
         0x00, // MSB
