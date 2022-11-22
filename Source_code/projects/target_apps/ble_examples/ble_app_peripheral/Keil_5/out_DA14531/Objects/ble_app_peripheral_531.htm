@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\out_DA14531\Objects\ble_app_peripheral_531.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\out_DA14531\Objects\ble_app_peripheral_531.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 22 10:36:25 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 22 14:08:03 2022
 <BR><P>
-<H3>Maximum Stack Usage =        440 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        416 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 gapc_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 <P>
@@ -838,7 +838,6 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_init_arp_func
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arch_rom_init
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_flash_auto_detect
-<LI><a href="#[1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_svc1_led_wr_ind_handler
 <LI><a href="#[1dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_func
 </UL>
 
@@ -2943,12 +2942,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> user_custs1_impl.o(.text)
 </UL>
-<P><STRONG><a name="[1e4]"></a>user_svc1_led_wr_ind_handler</STRONG> (Thumb, 4184 bytes, Stack size 144 bytes, user_custs1_impl.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
+<P><STRONG><a name="[1e4]"></a>user_svc1_led_wr_ind_handler</STRONG> (Thumb, 4048 bytes, Stack size 120 bytes, user_custs1_impl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rwip_schedule
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPinStatus
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_flash_read_data
@@ -3044,7 +3042,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> app_entry_point.o(.constdata)
 </UL>
 <P><STRONG><a name="[bf]"></a>user_catch_rest_hndl</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, user_peripheral.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
+<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_send
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ke_msg_alloc
@@ -3519,7 +3517,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
 <P><STRONG><a name="[9b]"></a>gapm_cmp_evt_handler</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, app_task.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = gapm_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = gapm_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_app_adv_undirect_complete
@@ -3540,7 +3538,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> app_task.o(.constdata)
 </UL>
 <P><STRONG><a name="[9c]"></a>gapc_cmp_evt_handler</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, app_task.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = gapc_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = gapc_cmp_evt_handler &rArr; user_catch_rest_hndl &rArr; user_svc1_led_wr_ind_handler &rArr; send &rArr; aes_operation &rArr; aes_part &rArr; aes_enc_dec &rArr; AES_decrypt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_catch_rest_hndl
 </UL>

@@ -1382,7 +1382,7 @@ void user_svc1_led_wr_ind_handler(ke_msg_id_t const msgid,
       val_1[2] == 0x62 &&
       val_1[3] == 0x89 &&
       val_1[4] == 0x68 &&
-      val_1[5] == 0xda /*&&
+      val_1[5] == 0xda &&
       val_1[6] == 0xaf &&
       val_1[7] == 0x90 &&
       val_1[8] == 0xec &&
@@ -1390,7 +1390,9 @@ void user_svc1_led_wr_ind_handler(ke_msg_id_t const msgid,
       val_1[10] == 0x35 &&
       val_1[11] == 0xb0 &&
       val_1[12] == 0x60 &&
-      val_1[13] == 0xd7*/
+      val_1[13] == 0xd7 &&
+      val_1[13] == 0xd8 &&
+      val_1[13] == 0xd9
   )
   {
 
